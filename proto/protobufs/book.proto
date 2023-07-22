@@ -1,1 +1,5 @@
-// TODO: 1: Add messages and services
+// TODO1 Add messages and services
+
+// $ protoc --dart_out=grpc:lib/src/generated -Iprotobufs protobufs/*
+
+
