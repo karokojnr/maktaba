@@ -1,10 +1,9 @@
-import 'package:doe/core/core.dart';
-import 'package:doe/domain/usecase/usecase.dart';
+import 'package:pwani_lib/core/core.dart';
+import 'package:pwani_lib/domain/usecase/usecase.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:proto/proto.dart';
 
-import '../../core/core.dart';
 import '../components/components.dart';
 
 class AttendantsView extends ConsumerWidget {

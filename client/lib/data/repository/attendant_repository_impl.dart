@@ -1,7 +1,8 @@
 import 'dart:async';
 
-import 'package:doe/domain/domain.dart';
 import 'package:proto/proto.dart';
+
+import '../../domain/domain.dart';
 
 class AttendantRepositoryImpl extends AttendantRepository {
   AttendantRepositoryImpl(this._stub);

@@ -1,5 +1,5 @@
-import 'package:doe/core/core.dart';
-import 'package:doe/presentation/controllers/attendants_dialog_controller.dart';
+import 'package:pwani_lib/core/core.dart';
+import 'package:pwani_lib/presentation/controllers/attendants_dialog_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:proto/proto.dart';

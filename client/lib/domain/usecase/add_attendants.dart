@@ -1,5 +1,6 @@
-import 'package:doe/domain/domain.dart';
 import 'package:proto/proto.dart';
+
+import '../domain.dart';
 
 class AddAttendants {
   AddAttendants(this._attendantRepository);

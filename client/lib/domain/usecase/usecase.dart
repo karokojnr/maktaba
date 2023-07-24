@@ -1,12 +1,13 @@
-import 'package:doe/data/data.dart';
-import 'package:doe/domain/usecase/add_attendants.dart';
-import 'package:doe/domain/usecase/add_many_books.dart';
-import 'package:doe/domain/usecase/get_attendants.dart';
-import 'package:doe/domain/usecase/get_books.dart';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:proto/proto.dart';
 
+import '../../data/data.dart';
+import 'add_attendants.dart';
 import 'add_book.dart';
+import 'add_many_books.dart';
+import 'get_attendants.dart';
+import 'get_books.dart';
 
 final addBookProvider =
     Provider<AddBook>((ref) => AddBook(ref.read(bookRepositoryProvider)));

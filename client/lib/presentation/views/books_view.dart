@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:proto/proto.dart';
 
 import '../../core/core.dart';
+import '../../domain/domain.dart';
 import '../components/components.dart';
 
 class BooksView extends ConsumerWidget {

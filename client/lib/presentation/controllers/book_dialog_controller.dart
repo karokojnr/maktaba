@@ -3,6 +3,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 import '../../config/config.dart';
 import '../../core/mixins/notifier_mounted.dart';
+import '../../domain/domain.dart';
 
 part 'book_dialog_controller.g.dart';
 
@@ -33,6 +34,4 @@ class BookDialogController extends _$BookDialogController with NotifierMounted {
     }
     ref.read(goRouter).pop();
   }
-
- 
 }
