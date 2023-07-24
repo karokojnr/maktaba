@@ -1,5 +1,36 @@
-// TODO1 Add messages and services
+syntax = "proto3";
 
-// $ protoc --dart_out=grpc:lib/src/generated -Iprotobufs protobufs/*
+
+message Book {
+    string title = 1;
+    string author = 2;
+}
+
+message Attendant {
+    string name = 1;
+    string role = 2;
+}
+message AttendantsList {
+    repeated Attendant attendants = 1;
+}
+
+
+message BookList {
+    repeated Book books = 1;
+}
+
+message Empty {}
+
+service BookService {
+    // Unary
+    rpc AddBook(Book) returns (Empty);
+    // Client streaming
+    rpc AddManyBooks(stream BookList) returns (Empty);
+    // Server streaming
+    rpc GetBooks(Empty) returns (stream BookList);
+    // Bi-directional streaming
+    rpc AddAttendants(stream AttendantsList) returns (stream AttendantsList);
+
+}
 
 
